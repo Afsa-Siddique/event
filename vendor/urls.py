@@ -26,7 +26,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     # Vendor Endpoints
-    path("vendors/registration/", VendorListCreateView.as_view(), name="vendor-list-create"),
+    path("vendors/", VendorListCreateView.as_view(), name="vendor-list-create"),
     
     path('login/', VendorLoginView.as_view(), name='vendor-login'),
     path("services/", ServiceListCreateView.as_view(), name="service-list-create"),
